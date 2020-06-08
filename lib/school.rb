@@ -27,8 +27,7 @@ class School
     @roster.each do |student_grade, student_name_array|
       student_name_array = student_name_array.sort
       if sorted_roster.length == 0 || sorted_roster.none? {|recorded_grade, student_name| recorded_grade== student_grade}
-        sorted_roster[student_grade] = []
-        sorted_roster[student_grade] << student_name_array
+        sorted_roster[student_grade] = student_name_array
       else 
         sorted_roster[student_grade] << student_name_array
       end
