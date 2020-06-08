@@ -8,5 +8,6 @@ class School
   attr_reader :roster
   
   def add_student(student_name, student_gr)
-  
+    if @roster.length = 
+  end 
 end 
