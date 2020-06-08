@@ -25,7 +25,7 @@ class School
   def sort 
     sorted_roster = {}
     @roster.each do |student_grade, student_name_array|
-      student_name_array.sort
+      student_name_array = student_name_array.sort
       binding.pry
       if sorted_roster.length == 0 || sorted_roster.none? {|recorded_grade, student_name| recorded_grade== student_grade}
         sorted_roster[student_grade] = []
